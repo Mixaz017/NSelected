@@ -1,0 +1,24 @@
+{
+	"name": "NSelected",
+	"version": "0.1.0",
+	"description": "Counts characters within selected text, in a really simple way, up to 10k characters.",
+	"author": "Mixaz",
+	"background": {
+		"scripts": [
+			"background.js"
+		]
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*/*"
+			],
+			"all_frames": true,
+			"js": [
+				"content.js"
+			]
+		}
+	],
+	"browser_action": {},
+	"manifest_version": 2
+}
